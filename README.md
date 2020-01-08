@@ -6,7 +6,7 @@ Here are the step to fetch the Amazon CLoudFront On-Demand pricing from the API 
 - created a worker 'app/workers/product_store_worker', which use API and store product records in database.
 - created a task 'lib/tasks/schedular.rake', which call the worker
 - you can use below command on console to call the schedular
-	rake sync:products
+	"rake sync:products"
 - used whenever gem for cron job which will run daily at midnight to fetch the product (config/schedule.rb)
 - used rspec for unit testing.
 
